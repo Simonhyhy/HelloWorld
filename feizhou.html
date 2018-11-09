@@ -1,0 +1,1083 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style type="text/css">
+		/*header部分++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+		body{
+			width: auto;
+			height: auto;
+			background: whitesmoke;
+		}
+		header{
+			height: 120px;
+			width: auto;
+			background: mediumturquoise;
+		}
+		.topic{
+			text-align: center;
+			line-height: 120px;
+			width: 800px;
+			height: 120px;
+			margin-left: 360px;
+		}
+		.topic>div{
+			float: left;
+		}
+		.topic:hover{
+			transform: scaleX(1.1);
+		}
+		/*导航栏部分+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=*/
+		.map{
+			width: auto;
+			height: 60px;
+			background: gray;
+		}
+		.map-a{
+			
+			height: 60px;
+			width: 800px;
+			margin-left: 180px;
+		}
+		
+		
+		.map-1{
+			font-size:20px ;
+			width: 80px;
+			height: 60px;
+			text-align: center;
+			color: white;
+			float: left;
+			margin-left:20px;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background: mediumaquamarine;
+		}
+		.map-2{
+			font-size:20px ;
+			margin-left: 3px;
+			width: 80px;
+			text-align: center;
+			color: white;
+			float: left;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background:none;
+			height: 60px;
+		}
+		.map-2:hover{
+			background: mediumaquamarine;
+		}
+		.map-3{
+			font-size:20px ;
+			margin-left: 3px;
+			width: 150px;
+			text-align: center;
+			color: white;
+			float: left;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background: none;
+			height: 60px;
+		}
+		.map-3:hover{
+			background: mediumaquamarine;
+		}
+		.map-4{
+			font-size:20px ;
+			margin-left: 3px;
+			width: 80px;
+			text-align: center;
+			color: white;
+			float: left;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background: none;
+			height: 60px;
+		}
+		.map-4:hover{
+			background: mediumaquamarine;
+		}
+		.map-5{
+			font-size:20px ;
+			margin-left: 3px;
+			width: 80px;
+			text-align: center;
+			color: white;
+			float: left;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background: none;
+			height: 60px;
+		}
+		.map-5:hover{
+			background: mediumaquamarine;
+		}
+		.map-6{
+			font-size:20px ;
+			margin-left: 3px;
+			width: 80px;
+			text-align: center;
+			color: white;
+			float: left;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background: none;
+			height: 60px;
+		}
+		.map-6:hover{
+			background: mediumaquamarine;
+		}
+		.map-7{
+			font-size:20px ;
+			margin-left: 3px;
+			width: 80px;
+			text-align: center;
+			color: white;
+			float: left;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background: mediumaquamarine;
+			height: 60px;
+		}
+		.map-6-a{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6-b{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6-c{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6-d{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6-e{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6:hover .map-6-a{
+			display: block;
+			animation: appear 1s linear 1 0s ;
+		}
+		.map-6:hover .map-6-b{
+			display: block;
+			animation: appear 1s linear 1 0.2s ;
+		}
+		.map-6:hover .map-6-c{
+			display: block;
+			animation: appear 1s linear 1 0.4s ;
+		}
+		.map-6:hover .map-6-d{
+			display: block;
+			animation: appear 1s linear 1 0.6s ;
+		}
+		.map-6:hover .map-6-e{
+			display: block;
+			animation: appear 1s linear 1 0.8s ;
+		}
+		@keyframes appear{
+			from{transform: rotateY(90deg);}
+			to{transform: rotateY(0deg)}
+		}
+		.map-7-a{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7-b{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7-c{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7-d{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7-e{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7:hover .map-7-a{
+			display: block;
+			animation: appear 1s linear 1 0s ;
+		}
+		.map-7:hover .map-7-b{
+			display: block;
+			animation: appear 1s linear 1 0.2s ;
+		}
+		.map-7:hover .map-7-c{
+			display: block;
+			animation: appear 1s linear 1 0.4s ;
+		}
+		.map-7:hover .map-7-d{
+			display: block;
+			animation: appear 1s linear 1 0.6s ;
+		}
+		.map-7:hover .map-7-e{
+			display: block;
+			animation: appear 1s linear 1 0.8s ;
+		}
+		.map-6{
+			font-size:20px ;
+			margin-left: 3px;
+			width: 80px;
+			text-align: center;
+			color: white;
+			float: left;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background: none;
+			height: 60px;
+		}
+		.map-6:hover{
+			background: mediumaquamarine;
+		}
+		.map-7{
+			font-size:20px ;
+			margin-left: 3px;
+			width: 80px;
+			text-align: center;
+			color: white;
+			float: left;
+			line-height: 60px;
+			position: relative;
+			top: -25px;
+			background: mediumaquamarine;
+			height: 60px;
+		}
+		.map-6-a{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6-b{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6-c{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6-d{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6-e{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-6:hover .map-6-a{
+			display: block;
+			animation: appear 1s linear 1 0s ;
+		}
+		.map-6:hover .map-6-b{
+			display: block;
+			animation: appear 1s linear 1 0.2s ;
+		}
+		.map-6:hover .map-6-c{
+			display: block;
+			animation: appear 1s linear 1 0.4s ;
+		}
+		.map-6:hover .map-6-d{
+			display: block;
+			animation: appear 1s linear 1 0.6s ;
+		}
+		.map-6:hover .map-6-e{
+			display: block;
+			animation: appear 1s linear 1 0.8s ;
+		}
+		@keyframes appear{
+			from{transform: rotateY(90deg);}
+			to{transform: rotateY(0deg)}
+		}
+		.map-7-a{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7-b{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7-c{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7-d{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7-e{
+			width: 120px;
+			height: 50px;
+			background: mediumaquamarine;
+			font-size:20px ;
+			text-align: center;
+			color: white;
+			line-height: 60px;
+			margin-top: 2px;
+			display: none;
+		}
+		.map-7:hover .map-7-a{
+			display: block;
+			animation: appear 1s linear 1 0s ;
+		}
+		.map-7:hover .map-7-b{
+			display: block;
+			animation: appear 1s linear 1 0.2s ;
+		}
+		.map-7:hover .map-7-c{
+			display: block;
+			animation: appear 1s linear 1 0.4s ;
+		}
+		.map-7:hover .map-7-d{
+			display: block;
+			animation: appear 1s linear 1 0.6s ;
+		}
+		.map-7:hover .map-7-e{
+			display: block;
+			animation: appear 1s linear 1 0.8s ;
+		}
+		/*正文部分==================================================================================*/
+		.subhead{
+			width: auto;
+			height: 40px;
+			background: white;
+		}
+		.subhead-1{
+			width: 17px;
+			height: 14px;
+			background: url(img/broadcast.jpg);
+			position:absolute;
+			left: 20px;
+			top: 200px;
+			float: left;
+		}
+		.subhead-2{
+			width: 280px;
+			height: 40px;
+			text-align: center;
+			font-size: 16px;
+			line-height: 40px;
+			color: gray;
+			float: left;
+			position: relative;
+			left: -800px;
+		}
+		.subhead-3{
+			width: 13px;
+			height: 14px;
+			background: url(img/login.jpg);
+			position:absolute;
+			left: 1430px;
+			top: 200px;
+			float: left;
+		}
+		.subhead-4{
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			font-size: 16px;
+			line-height: 40px;
+			color: gray;
+			float: left;
+			position: relative;
+			left: 320px;
+		}
+		.subhead-4:hover {
+			color: blue;
+		}
+		/*正文部分===========================================================================*/
+		.tonglan{
+			height: 300px;
+			width: 130px;
+			background: white;
+			margin-top: 10px;
+			margin-left: 100px;
+			float: left;
+		}
+		.tonglan-1{
+			width: 128px;
+			height: 70px;
+			background: url(img/ppt.jpg)no-repeat;
+			position: relative;
+			left: 1.5px;
+			top: 8px;
+		}
+		.tonglan-2{
+			width: 128px;
+			height: 70px;
+			background: url(img/ppt2.jpg)no-repeat;
+			position: relative;
+			left: 1.5px;
+			top: 2px;
+			margin-top: 5px;
+		}
+		.tonglan-3{
+			width: 128px;
+			height: 70px;
+			background: url(img/ppt3.jpg)no-repeat;
+			position: relative;
+			left: 1.5px;
+			top: 2px;
+			margin-top: 5px;
+		}
+		.tonglan-4{
+			width: 128px;
+			height: 70px;
+			background: url(img/ppt4.jpg)no-repeat;
+			position: relative;
+			left: 1.5px;
+			top: 2px;
+			margin-top: 5px;
+		}
+		.tonglan:hover{
+			transform: translateY(-10px);
+		}
+		/*滑动展示=======================================================================*/
+		.huadong{
+			width: 719px;
+			height: 300px;
+			overflow: hidden;
+			background: white;
+			position: absolute;
+			left: 250px;
+			top: 240px;
+		}
+		.huadong-a{
+			width: 2876px;
+			height: 300px;
+			background: white;
+			animation: huadongmove 16s linear infinite;
+		}
+		.huadong-1{
+			width: 716px;
+			height: 297px;
+			background: url(img/banner4.jpg);
+			float: left;
+			line-height: 300px;
+			position: relative;
+			left: 0px;
+			top: 1.5px;
+		}
+		.huadong-2{
+			width: 716px;
+			height: 297px;
+			background: url(img/banner3.jpg);
+			float: left;
+			line-height: 300px;
+			margin-left: 3px;
+		}
+		.huadong-3{
+			width: 716px;
+			height: 297px;
+			background: url(img/banner2.jpg);
+			float: left;
+			line-height: 300px;
+			margin-left: 3px;
+		}
+		.huadong-4{
+			width: 716px;
+			height: 297px;
+			background: url(img/banner1.jpg);
+			float: left;
+			line-height: 300px;
+			margin-left: 3px;
+		}
+		@keyframes huadongmove{
+			from{transform: translateX(0px);}
+			to{transform: translateX(-2170px);}
+		}
+		/*滑动下方===========================================================================*/
+		.display-a{
+			width: 860px;
+			height: 220px;
+			background: white;
+			position: relative;
+			top: 320px;
+			left: 100px;
+		}
+		.display-a-1{
+			width: 100px;
+			height: 30px;
+			text-align: center;
+			color: white;
+			float: left;
+			font-size:15px ;
+			line-height: 30px;
+			position: relative;
+			left: -211px;
+			top: 20px;
+			background: tomato;
+		}
+		.display-a-2{
+			width: 200px;
+			height: 30px;
+			text-align: center;
+			color: white;
+			float: left;
+			font-size:25px ;
+			line-height: 30px;
+			position: relative;
+			left: -211px;
+			top: 20px;
+			color: cornflowerblue;
+		}
+		.display-a-3{
+			width: 200px;
+			height: 123px;
+			background: url(img/图片3.jpg);
+			position: relative;
+			top: 70px;
+			left: 20px;
+		}
+		.display-a-4{
+			width: 840px;
+			height: 123px;
+			position: relative;
+			top: -75px;
+			font-size: 14px;
+		}
+		.display-a-5{
+			width: 15px;
+			height: 15px;
+			background: url(img/ren.png)no-repeat;
+			position: relative;
+			left:30px ;
+			top: -75px;
+			float: left;
+		}
+		.display-a-6{
+			width: 100px;
+			height: 20px;
+			color: #6495ED;
+			float: left;
+			font-size: 15px;
+			position: relative;
+			left: 35px;
+			top: -78px;
+		}
+		.display-a-7{
+			width: 15px;
+			height: 15px;
+			background: url(img/shizhong.png)no-repeat;
+			position: relative;
+			left:50px ;
+			top: -75px;
+			float: left;
+		}
+		.display-a-8{
+			width: 150px;
+			height: 20px;
+			color: gray;
+			float: left;
+			font-size: 15px;
+			position: relative;
+			left: 55px;
+			top: -78px;
+		}
+		.display-a-9{
+			width: 20px;
+			height: 15px;
+			background: url(img/eyes.png)no-repeat;
+			position: relative;
+			left:55px ;
+			top: -75px;
+			float: left;
+		}
+		.display-a-10{
+			width: 150px;
+			height: 20px;
+			color: gray;
+			float: left;
+			font-size: 15px;
+			position: relative;
+			left: 55px;
+			top: -78px;
+		}
+		.display-b{
+			width: 860px;
+			height: 220px;
+			background: white;
+			position: relative;
+			top: 335px;
+			left: 100px;
+		}
+		.display-b-1{
+			width: 100px;
+			height: 30px;
+			text-align: center;
+			color: white;
+			float: left;
+			font-size:15px ;
+			line-height: 30px;
+			position: relative;
+			left: -660px;
+			top: -20px;
+			background: tomato;
+		}
+		.display-b-2{
+			width: 600px;
+			height: 30px;
+			text-align: center;
+			color: white;
+			float: left;
+			font-size:25px ;
+			line-height: 30px;
+			position: relative;
+			left: -120px;
+			top: -50px;
+			color: cornflowerblue;
+		}
+		.display-b-3{
+			width: 200px;
+			height: 123px;
+			background: url(img/timthumb.jpg);
+			position: relative;
+			top: 70px;
+			left: 20px;
+		}
+		.display-b-4{
+			width: 840px;
+			height: 123px;
+			position: relative;
+			top: -73px;
+			left: 230px;
+			font-size: 14px;
+		}
+		.display-b-5{
+			width: 15px;
+			height: 15px;
+			background: url(img/ren.png)no-repeat;
+			position: relative;
+			left:260px ;
+			top: -75px;
+			float: left;
+		}
+		.display-b-6{
+			width: 100px;
+			height: 20px;
+			color: #6495ED;
+			float: left;
+			font-size: 15px;
+			position: relative;
+			left: 265px;
+			top: -78px;
+		}
+		.display-b-7{
+			width: 15px;
+			height: 15px;
+			background: url(img/shizhong.png)no-repeat;
+			position: relative;
+			left:280px ;
+			top: -75px;
+			float: left;
+		}
+		.display-b-8{
+			width: 150px;
+			height: 20px;
+			color: gray;
+			float: left;
+			font-size: 15px;
+			position: relative;
+			left: 285px;
+			top: -78px;
+		}
+		.display-b-9{
+			width: 20px;
+			height: 15px;
+			background: url(img/eyes.png)no-repeat;
+			position: relative;
+			left:285px ;
+			top: -75px;
+			float: left;
+		}
+		.display-b-10{
+			width: 150px;
+			height: 20px;
+			color: gray;
+			float: left;
+			font-size: 15px;
+			position: relative;
+			left: 285px;
+			top: -78px;
+		}
+		.display-c{
+			width: 360px;
+			height: 70px;
+			background: white;
+			position:relative;
+			left: 970px;
+			top: -427px;
+		}
+		.display-c-1{
+			width: 45px;
+			height: 45px;
+			background: url(img/atlas.jpg)0px 0px;
+			position: relative;
+			left:12.5px ;
+			top: 12.5px;
+			
+		}
+		.display-c-2{
+			width: 45px;
+			height: 45px;
+			background: url(img/atlas.jpg)292px 0px;
+			position: relative;
+			left:70px ;
+			top: -32.5px;
+		}
+		.display-c-3{
+			width: 45px;
+			height: 45px;
+			background: url(img/atlas.jpg)234px 0px;
+			position: relative;
+			left:127.5px ;
+			top: -77.5px;
+		}
+		.display-c-4{
+			width: 45px;
+			height: 45px;
+			background: url(img/atlas.jpg)176px 0px;
+			position: relative;
+			left:185px ;
+			top: -122.5px;
+		}
+		.display-c-5{
+			width: 45px;
+			height: 45px;
+			background: url(img/atlas.jpg)118px 0px;
+			position: relative;
+			left:242.5px ;
+			top: -167.5px;
+		}
+		.display-c-6{
+			width: 45px;
+			height: 45px;
+			background: url(img/atlas.jpg)60px 0px;
+			position: relative;
+			left:300px ;
+			top: -212.5px;
+		}
+		.display-d{
+			width: 360px;
+			height: 160px;
+			background: white;
+			position: absolute;
+			left: 980px;
+			top: 325px;
+		}
+		.display-d-1{
+			width: 80px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 20px;
+			color: #66CDAA;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+		hr{
+			width: 320px;
+		}
+		.display-d-2{
+			margin-left: 20px;
+			font-size: 14px;
+		}
+		/*#display-d-2{
+			position: relative;
+			left: 20px;
+		}*/
+		.display-e{
+			width: 360px;
+			height: 160px;
+			background:white;
+			position: relative;
+			left: 970px;
+			top: -240px;
+		}
+		.display-e-1{
+			width: 80px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 20px;
+			color: #66CDAA;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+		span{
+			color: #66CDAA;
+		}
+		span:hover{
+			color: cadetblue;
+		}
+	</style>
+</head>
+<body>
+	<!--header部分+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+	<header>
+		<div class="topic">
+			<div style="font-size: 50px;color: white">飞舟博客</div>
+			<div style="font-size: 25px;color: white">——关注Web前端发展，共享办公软件使用心得</p>	
+		</div>
+	</header>
+	<!--导航栏部分+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+	<div class="map">
+		<div class="map-a">
+			<div class="map-1">首页</div>
+			<div class="map-2">资讯</div>	
+			<div class="map-3">Web前端</div>
+			<div class="map-4">office</div>
+			<div class="map-5">计算机</div>	
+			<div class="map-6">资源
+				<div class="map-6-a">网站模块</div>
+				<div class="map-6-b">网页插件</div>
+				<div class="map-6-c">网页图标</div>
+				<div class="map-6-d">软件</div>
+				<div class="map-6-e">其他</div>
+			</div>
+			<div class="map-7">其他
+			<div class="map-7-a">文章存档</div>
+			<div class="map-7-b">标签云</div>	
+			<div class="map-7-c">投稿</div>
+			<div class="map-7-d">留言板</div>
+			<div class="map-7-e">友情链接</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--副标题部分====================================================================================-->
+	<div class="subhead">
+		<div class="subhead-1"></div>
+		<div class="subhead-2">飞舟博客改版，新增Web前端开发知识</div>	
+		<div class="subhead-3"></div>
+		<div class="subhead-4">登录</div>	
+	</div>
+	<!--正文部分=======================================================================================-->
+	<div class="tonglan">
+		<div class="tonglan-1"></div>
+		<div class="tonglan-2"></div>	
+		<div class="tonglan-3"></div>
+		<div class="tonglan-4"></div>
+	</div>
+	<!--滑动展示=========================================================================================-->
+	<div class="huadong">
+		<div class="huadong-a">
+			<div class="huadong-1"></div>
+			<div class="huadong-2"></div>	
+			<div class="huadong-3"></div>
+			<div class="huadong-4"></div>
+		</div>
+		
+	</div>
+	<!--滑动下方==========================================================================================-->
+	<div class="display-a">
+		<div class="display-a-1">Web前端</div>
+		<div class="display-a-2">mate标签全解</div>
+		<div class="display-a-3"></div>	
+		<div class="display-a-4">
+			<h4>站点导航： http-equiv name 其他 <meta>元素可提供相关页面的元信息(meta-</h4>
+			<p>information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部<head>内，是</p>
+			<p>html语言里的一个辅助性标签，里面的内容不会显示在... </p>
+		</div>
+		<div class="display-a-5"></div>
+		<div class="display-a-6">falychou1989</div>	
+		<div class="display-a-7"></div>
+		<div class="display-a-8">2年前 (2016-01-21)</div>		
+		<div class="display-a-9"></div>
+		<div class="display-a-10">5652℃ </div>
+	</div>
+	<div class="display-b">
+		<div class="display-b-1">office</div>
+		<div class="display-b-2">PowerPoint里面无法进行中文输入，原因为何？ </div>
+		<div class="display-b-3"></div>	
+		<div class="display-b-4">
+			<p>微软的office系列软件很是好用，但是也伴随着很多的问题，今天就来谈谈PPT中无法输入中文的</p>
+			<p>情况。 具体的症状应该是这样的： 在其它软件中（如记事本中）是可以打出中文字符的； 唯独</p>
+			<p>PPT中只能输入英文，一旦切换到中文输入法时就无法打出中文； 可是却可以通过复制粘贴的方</p>
+			<p>式将中文粘...</p>
+		</div>
+		<div class="display-b-5"></div>
+		<div class="display-b-6">falychou1989</div>	
+		<div class="display-b-7"></div>
+		<div class="display-b-8">3年前 (2016-03-18)</div>		
+		<div class="display-b-9"></div>
+		<div class="display-b-10">3135℃</div>
+	</div>
+	<div class="display-c">
+		<div class="display-c-1"></div>
+		<div class="display-c-2"></div>	
+		<div class="display-c-3"></div>
+		<div class="display-c-4"></div>
+		<div class="display-c-5"></div>
+		<div class="display-c-6"></div>
+	</div>
+	<div class="display-d">
+		<div class="display-d-1">邮箱订阅</div>
+		<hr />	
+		<p class="display-d-2">填写您的邮件地址，订阅更多的精彩内容：</p>
+		&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="display-d-3" id="display-d-3" value="your@email.com" />
+	</div>
+	<div class="display-e">
+		<div class="display-e-1">分类目录</div>
+		<hr />	
+		&nbsp;&nbsp;&nbsp;&nbsp;<span >office&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;Web前端</span><br /><br />
+		&nbsp;&nbsp;&nbsp;&nbsp;<span >其他&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图片图标</span><br /><br />	
+		&nbsp;&nbsp;&nbsp;&nbsp;<span >计算机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;软件</span>
+	</div>
+</body>
+</html>
+
+

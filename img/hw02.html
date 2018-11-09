@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 150px;
+				height: 50px;
+				background: gray;
+				margin-right: 5px;
+				text-align: center;
+				line-height: 50px;
+				float: left;
+			}
+			div:hover{
+				background: yellow;
+				transition: all 2s linear;
+			}
+			.div-proall{
+				display: none;
+				
+			}
+			.div-pro:hover .div-proall{
+				display: block;
+			}
+			.div-gn{
+				background: green;
+			}
+			.div-tp{
+				background: blueviolet;
+			}
+			.div-js{
+				background: pink;
+			}
+			.div-gnall{
+				position: relative;
+				left: 150px;
+				top: -25px;
+			}
+			.div-gn1{
+				background: purple;
+			}
+			.div-gn2{
+				background: red;
+			}
+			.div-gn3{
+				background: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div-index">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</div>
+		<div class="div-news">新闻快讯</div>
+		<div class="div-pro">产品展示
+			<div class="div-proall">
+				<div class="div-gn">功能
+					<div class="div-gnall">
+						<div class="div-gn1">A</div>
+						<div class="div-gn2">B</div>
+						<div class="div-gn3">C</div>
+					</div>
+				</div>
+				<div class="div-tp">图片</div>
+				<div class="div-js">介绍</div>
+			</div>
+		</div>
+		<div class="div-ser">售后服务</div>
+		<div class="div-tel">联系我们</div>
+	</body>
+</html>
+
